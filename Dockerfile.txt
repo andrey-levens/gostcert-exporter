@@ -2,8 +2,9 @@ FROM python:3.12-slim
 
 RUN pip install --no-cache-dir cryptography
 
-COPY cert-exporter.py /app/cert-exporter.py
+COPY cert-exporter.py /app/gostcert-exporter.py
 
 WORKDIR /app
 
-CMD ["python", "cert-exporter.py"]
+
+CMD ["python", "gostcert-exporter.py"]
